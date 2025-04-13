@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Kailee 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, p {
+      text-align: center;
+    }
+
+    .header {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .subheader {
+      font-size: 1.2rem;
+      margin: 15px auto 30px auto;
+      max-width: 600px;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .image-item {
+      width: 100%;
+      max-width: 345px;
+      transform-origin: center;
+    }
+
+    .image-item:nth-child(1) { transform: rotate(-4deg) translateY(-10px); }
+    .image-item:nth-child(2) { transform: rotate(5deg) translateY(12px); }
+    .image-item:nth-child(3) { transform: rotate(-6deg) translateY(-20px); }
+    .image-item:nth-child(4) { transform: rotate(3deg) translateY(10px); }
+    .image-item:nth-child(5) { transform: rotate(-5deg) translateY(-15px); }
+
+    iframe {
+      width: 100%;
+      max-width: 345px;
+      border: none;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .song-selector {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    select, button {
+      padding: 12px;
+      font-size: 1rem;
+      font-family: 'Outfit', sans-serif;
+      border: none;
+      border-radius: 8px;
+      background-color: #f3f3f3;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 50px 20px;
+      transform: rotate(-3deg);
+    }
+
+    video {
+      width: 100%;
+      max-width: 480px; /* Adjusted max-width for better mobile responsiveness */
+      height: auto;
+      border-radius: 16px;
+      display: block;
+      margin: 0 auto 20px auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: none; /* Ensuring the video is not tilted */
+    }
+
+    .confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    @media (max-width: 600px) {
+      h1.header {
+        font-size: 2rem;
+      }
+
+      .subheader {
+        font-size: 1rem;
+      }
+
+      .image-item {
+        width: 90vw;
+      }
+
+      iframe {
+        width: 100%;
+      }
+
+      video {
+        width: 95vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas class="confetti"></canvas>
+
+  <h1 class="header">Happy Birthday Kailee 🎉</h1>
+  <p class="subheader">Wishing you the warmest, cutest, and most raccoon-approved birthday ever! Here's something small, just for you 💌</p>
+
+  <!-- IMAGE GRID -->
+  <div class="image-grid">
+    <div class="image-item">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=218424650672012669" height="470" width="345" scrolling="no"></iframe>
+      <div class="quote">"You make the world brighter just by being in it."</div>
+    </div>
+    <div class="image-item">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=561331541054265361" height="318" width="345" scrolling="no"></iframe>
+      <div class="quote">"You're the sparkle in someone’s day."</div>
+    </div>
+    <div class="image-item">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=185984659606879869" height="445" width="345" scrolling="no"></iframe>
+      <div class="quote">"Happiness is seeing you smile."</div>
+    </div>
+    <div class="image-item">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=54113633026601051" height="432" width="345" scrolling="no"></iframe>
+      <div class="quote">"Always be your adorable self."</div>
+    </div>
+    <div class="image-item">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=1029283689818824263" height="329" width="345" scrolling="no"></iframe>
+      <div class="quote">"You’re someone’s favorite notification."</div>
+    </div>
+  </div>
+
+  <!-- SONG SELECTOR -->
+  <div class="song-selector">
+    <h2>Pick a song, any song 🎶 (It's anonymous!)</h2>
+    <select id="songSelect">
+      <option value="3vkCueOmm7xQDoJ17W1Pm3">Option 1</option>
+      <option value="1oAwsWBovWRIp7qLMGPIet">Option 2</option>
+      <option value="7mDTvYD2ieE4Q28XFziMfJ">Option 3</option>
+      <option value="11LmqTE2naFULdEP94AUBa">Option 4</option>
+      <option value="3siwsiaEoU4Kuuc9WKMUy5">Option 5</option>
+      <option value="2hKdd3qO7cWr2Jo0Bcs0MA">Option 6</option>
+      <option value="34Yl756FwYuZldE9xnshj5">Option 7</option>
+    </select>
+    <br>
+    <button onclick="playSong()">Play My Mystery Song</button>
+    <div id="playerContainer"></div>
+  </div>
+
+  <!-- CLOSING VIDEO -->
+  <div class="footer">
+    <video controls preload="none">
+      <source src="Video-276.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="quote">"This little raccoon wanted to say hi and thank you for being such a special part of my world." – Aarush the Raccoon 🦝</div>
+  </div>
+
+  <!-- CONFETTI + SONG SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    function launchConfetti() {
+      confetti({
+        particleCount: 150,
+        spread: 60,
+        origin: { y: 0.6 },
+        colors: ['#ff99c8', '#fcf6bd', '#d0f4de', '#a9def9', '#e4c1f9']
+      });
+    }
+
+    window.onload = launchConfetti;
+
+    let songPlayed = false;
+    function playSong() {
+      if (songPlayed) return;
+      const selected = document.getElementById('songSelect').value;
+      const player = document.createElement('iframe');
+      player.src = `https://open.spotify.com/embed/track/${selected}?utm_source=generator&theme=0`;
+      player.width = "100%";
+      player.height = "352";
+      player.frameBorder = "0";
+      player.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+      player.loading = "lazy";
+      document.getElementById('playerContainer').appendChild(player);
+      songPlayed = true;
+      document.getElementById('songSelect').disabled = true;
+      document.querySelector("button").disabled = true;
+      launchConfetti();
+    }
+  </script>
+</body>
+</html>
